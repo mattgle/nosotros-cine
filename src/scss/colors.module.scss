@@ -1,0 +1,13 @@
+// [------------------------------ STATIC COLORS ------------------------------]
+
+$white: #fff;
+$black: #000000;
+$danger: #ff0000;
+$darkGray: #181818;
+$orange: #ff5f00;
+
+// [------------------------------ ALPHA COLORS ------------------------------]
+
+@function black($decimalOpacity: 1) {
+  @return rgba(0, 0, 0, $decimalOpacity);
+}
