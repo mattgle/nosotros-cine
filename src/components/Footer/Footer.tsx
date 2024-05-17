@@ -8,7 +8,7 @@ function Footer() {
         <p>TODO Nombre de la empresa</p>
       </div>
       <div>
-        <span
+        <button
           className={styles.scrollTop}
           onClick={scrollToTop}
           onKeyDown={(e) => {
@@ -18,9 +18,10 @@ function Footer() {
           }}
           role="button"
           tabIndex={0}
+          title="Scroll to top"
         >
           Top
-        </span>
+        </button>
       </div>
     </footer>
   );

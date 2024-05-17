@@ -1,9 +1,9 @@
-import styles from "./Header.module.scss";
+import styles from "./Navbar.module.scss";
 import { scrollToTop } from "@/utils/scrollToTop";
 import logoIcon from "@/assets/logoIcon.png";
 import logo from "@/assets/logo.png";
 
-function Header() {
+function Navbar() {
   return (
     <header className={styles.container}>
       <div onClick={scrollToTop} className={styles.iconsContainer}>
@@ -17,4 +17,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
