@@ -1,0 +1,40 @@
+@import "./styleguide.scss";
+
+:root {
+  --navbar-height: 114px;
+}
+
+body {
+  margin: 0;
+  font-family:
+    $roboto,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #081a20 42%, #020506 100%);
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 184px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,36 @@
+// [------------------------------ FONTS ------------------------------]
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$roboto: "Roboto", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+$poppins: "Poppins", sans-serif;
+
+// [--------------------------- FONT WEIGHT ---------------------------]
+// Revisar imports para ver que weight tienen
+
+$thin: 100;
+$extraLight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 700;
+$black: 900;
+
+// [----------------------------- MIXINS ------------------------------]
+
+@mixin heading1 {
+  font-family: $roboto;
+  font-weight: $medium;
+  font-size: 44px;
+  letter-spacing: -1px;
+  line-height: 48px;
+}
+
+// EJ Utilizar el mixin en un elemento específico
+// h1 {
+//   @include heading1;
+// }
