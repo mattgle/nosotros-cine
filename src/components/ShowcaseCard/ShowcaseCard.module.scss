@@ -7,11 +7,6 @@
   border: 1px solid $grayCard;
   border-radius: 6px;
   position: relative;
-  // transition: transform 0.2s;
-}
-
-.container:hover {
-  // transform: scale(1.05);
 }
 
 .showcaseImage {
@@ -37,22 +32,39 @@
   text-align: center;
 }
 
-.showcaseType {
-  color: $black;
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 10px;
-  text-align: center;
-}
-
 .showcaseTypeContainer {
   position: absolute;
   top: 10px;
   right: 10px;
-  border-top-left-radius: 16px;
-  border-bottom-right-radius: 6px;
-  background-color: $orange;
+  border-radius: 50px;
+  background-color: $blackType;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s ease;
+  min-width: 34px;
+}
+
+.showcaseIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.showcaseType {
+  font-family: $roboto;
+  font-weight: $semiBold;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.container:hover .showcaseType {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .movie {
@@ -69,4 +81,24 @@
 
 .awards {
   border-bottom: 5px solid $yellow;
+}
+
+.movieText {
+  color: $green;
+}
+
+.serieText {
+  color: $lightBlue;
+}
+
+.documentaryText {
+  color: $pink;
+}
+
+.awardsText {
+  color: $yellow;
+}
+
+.defaultText {
+  color: $black;
 }

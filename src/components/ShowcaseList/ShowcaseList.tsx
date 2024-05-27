@@ -42,6 +42,7 @@ const ShowcaseList = () => {
             img={item.img}
             title={item.title}
             type={item.type}
+            filter={item.filter}
           />
         ))}
       </div>
