@@ -1,12 +1,12 @@
 import HeroSection from "@/components/HeroSection/HeroSection";
 import styles from "./Home.module.scss";
-import CardSection from "@/components/CardSection/CardSection";
+import ShowcaseList from "@/components/ShowcaseList/ShowcaseList";
 
 function Home() {
   return (
     <div className={styles.container}>
       <HeroSection />
-      <CardSection />
+      <ShowcaseList />
     </div>
   );
 }
