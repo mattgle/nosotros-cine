@@ -10,50 +10,50 @@ interface Props {
   filter: string;
 }
 
+const getBorderStyle = (type: string): string => {
+  switch (type) {
+    case "Película":
+      return styles.movie;
+    case "Serie":
+      return styles.serie;
+    case "Premio":
+      return styles.awards;
+    case "Documental":
+      return styles.documentary;
+    default:
+      return "";
+  }
+};
+
+const getIcon = (filter: string): string => {
+  switch (filter) {
+    case "Noticias":
+      return megaphoneIcon;
+    case "Reseñas":
+      return dotsIcon;
+    case "Eventos":
+      return starIcon;
+    default:
+      return "";
+  }
+};
+
+const getTextColorStyle = (type: string): string => {
+  switch (type) {
+    case "Película":
+      return styles.movieText;
+    case "Serie":
+      return styles.serieText;
+    case "Premio":
+      return styles.awardsText;
+    case "Documental":
+      return styles.documentaryText;
+    default:
+      return styles.defaultText;
+  }
+};
+
 const ShowcaseCard = ({ img, title, type, filter }: Props) => {
-  const getBorderStyle = (type: string): string => {
-    switch (type) {
-      case "Película":
-        return styles.movie;
-      case "Serie":
-        return styles.serie;
-      case "Premio":
-        return styles.awards;
-      case "Documental":
-        return styles.documentary;
-      default:
-        return "";
-    }
-  };
-
-  const getIcon = (filter: string): string => {
-    switch (filter) {
-      case "Noticias":
-        return megaphoneIcon;
-      case "Reseñas":
-        return dotsIcon;
-      case "Eventos":
-        return starIcon;
-      default:
-        return "";
-    }
-  };
-
-  const getTextColorStyle = (type: string): string => {
-    switch (type) {
-      case "Película":
-        return styles.movieText;
-      case "Serie":
-        return styles.serieText;
-      case "Premio":
-        return styles.awardsText;
-      case "Documental":
-        return styles.documentaryText;
-      default:
-        return styles.defaultText;
-    }
-  };
-
   return (
     <div className={styles.container}>
       <img

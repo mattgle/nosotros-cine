@@ -13,7 +13,7 @@ interface ShowcaseItem {
 const ShowcaseList = () => {
   const [filter, setFilter] = useState<string>("Ver Todo");
 
-  const handleFilterChange = (newFilter: string) => {
+  const handleFilterChange = (newFilter: string) => () => {
     setFilter(newFilter);
   };
 
@@ -30,7 +30,7 @@ const ShowcaseList = () => {
     <div className={styles.showcaseContainer}>
       <div className={styles.filterContainer}>
         {uniqueFilters.map((filterItem, index) => (
-          <button key={index} onClick={() => handleFilterChange(filterItem)}>
+          <button key={index} onClick={handleFilterChange(filterItem)}>
             {filterItem}
           </button>
         ))}
