@@ -6,7 +6,6 @@ function Home() {
   return (
     <div className={styles.container}>
       <Hero />
-      <CardSection />
       <ShowcaseList />
     </div>
   );
