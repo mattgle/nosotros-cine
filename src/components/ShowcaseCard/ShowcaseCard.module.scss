@@ -1,0 +1,104 @@
+@import "@/scss/styleguide.scss";
+
+.container {
+  width: 364px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $grayCard;
+  border-radius: 6px;
+  position: relative;
+}
+
+.showcaseImage {
+  width: 100%;
+  height: 250px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.showcaseTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.showcaseTitle {
+  font-family: $roboto;
+  font-weight: $semiBold;
+  color: $white;
+  font-size: 18px;
+  padding: 13px 21px;
+  text-align: center;
+}
+
+.showcaseTypeContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50px;
+  background-color: $blackType;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s ease;
+  min-width: 34px;
+}
+
+.showcaseIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.showcaseType {
+  font-family: $roboto;
+  font-weight: $semiBold;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.container:hover .showcaseType {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.movie {
+  border-bottom: 5px solid $green;
+}
+
+.serie {
+  border-bottom: 5px solid $lightBlue;
+}
+
+.documentary {
+  border-bottom: 5px solid $pink;
+}
+
+.awards {
+  border-bottom: 5px solid $yellow;
+}
+
+.movieText {
+  color: $green;
+}
+
+.serieText {
+  color: $lightBlue;
+}
+
+.documentaryText {
+  color: $pink;
+}
+
+.awardsText {
+  color: $yellow;
+}
+
+.defaultText {
+  color: $black;
+}

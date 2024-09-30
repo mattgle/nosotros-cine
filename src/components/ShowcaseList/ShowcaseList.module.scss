@@ -1,0 +1,30 @@
+@import "@/scss/styleguide.scss";
+
+.showcaseContainer {
+  padding-bottom: 40px;
+}
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filterContainer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.filterContainer button {
+  margin-right: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid $orange;
+  background-color: #030a0d;
+  color: $white;
+}
+
+.filterContainer button:last-child {
+  margin-right: 0;
+}

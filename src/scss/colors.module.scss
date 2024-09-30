@@ -6,9 +6,15 @@ $black: #000000;
 $danger: #ff0000;
 $darkGray: #181818;
 $orange: #ff5f00;
+$lightBlue: #009be6;
+$green: #55cc14;
+$yellow: #f9ff00;
+$pink: #ff3f81;
+$grayCard: #384649;
+$blackType: #0b171d;
+$blackFilter: #030a0d;
 
 // [------------------------------ ALPHA COLORS ------------------------------]
-
 @function black($decimalOpacity: 1) {
   @return rgba(0, 0, 0, $decimalOpacity);
 }
