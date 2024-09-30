@@ -19,7 +19,7 @@ const ShowcaseList = () => {
 
   const uniqueFilters: string[] = [
     "Ver Todo",
-    ...data.map((item) => item.filter),
+    ...new Set(data.map((item) => item.filter)),
   ];
   const filteredData: ShowcaseItem[] =
     filter === "Ver Todo"
