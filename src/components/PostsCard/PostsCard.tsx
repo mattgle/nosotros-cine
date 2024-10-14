@@ -53,7 +53,7 @@ const getTextColorStyle = (type: string): string => {
   }
 };
 
-const PostsCard = ({ img, title, type, filter }: Props) => {
+const PostCard = ({ img, title, type, category }: Props) => {
   return (
     <div className={styles.container}>
       <img
