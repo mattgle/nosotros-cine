@@ -3,108 +3,108 @@
     "img": "https://picsum.photos/200/300",
     "title": "Programación oficial del Festival de Cine de Cannes 2023",
     "type": "Serie",
-    "filter": "Noticias"
+    "category": "Noticias"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Gran Turismo",
     "type": "Película",
-    "filter": "Eventos"
+    "category": "Eventos"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "La premiere de “Mandalorian” y todo lo que tenes que saber de la serie",
     "type": "Película",
-    "filter": "Eventos"
+    "category": "Eventos"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "El documental del asesino del Zodíaco por David Fincher",
     "type": "Documental",
-    "filter": "Eventos"
+    "category": "Eventos"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Premiación anime “Ataque de titanes”",
     "type": "Premio",
-    "filter": "Noticias"
+    "category": "Noticias"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Los premios Bafta llegan este 19 de febrero de 2023",
     "type": "Premio",
-    "filter": "Noticias"
+    "category": "Noticias"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "¿Quién es Erin Carter?",
     "type": "Serie",
-    "filter": "Eventos"
+    "category": "Eventos"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "“La chica más afortunada del mundo” la vida de una escritora neoyorquina",
     "type": "Documental",
-    "filter": "Noticias"
+    "category": "Noticias"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Edición número 95 de los Oscar 2023",
     "type": "Premio",
-    "filter": "Eventos"
+    "category": "Eventos"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Ninja Turtles: Caos mutante",
     "type": "Película",
-    "filter": "Noticias"
+    "category": "Noticias"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Emmys 2023: Los nominados",
     "type": "Premio",
-    "filter": "Eventos"
+    "category": "Eventos"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Llego la segunda temporada de “The Bear”",
     "type": "Serie",
-    "filter": "Noticias"
+    "category": "Noticias"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "“The Idol”: detrás de escena",
     "type": "Documental",
-    "filter": "Reseñas"
+    "category": "Reseñas"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "“Futurama” temporada 11",
     "type": "Película",
-    "filter": "Reseñas"
+    "category": "Reseñas"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Special Ops: Lioness",
     "type": "Serie",
-    "filter": "Reseñas"
+    "category": "Reseñas"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "La premiere de “Mandalorian” y todo lo que tenes que saber de la serie",
     "type": "Serie",
-    "filter": "Eventos"
+    "category": "Eventos"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "Barbie: detrás de escena",
     "type": "Documental",
-    "filter": "Noticias"
+    "category": "Noticias"
   },
   {
     "img": "https://picsum.photos/200/300",
     "title": "The Equalizer 3: detrás de escena",
     "type": "Documental",
-    "filter": "Eventos"
+    "category": "Eventos"
   }
 ]

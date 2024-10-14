@@ -17,3 +17,12 @@ $navbarHeight: 114px;
 .hide-scroll::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
+
+// [------------------------------- BREAKPOINTS -------------------------------]
+
+$breakpoint-mobile: 440px;
+$breakpoint-big-mobile: 575px;
+$breakpoint-small-tablet: 740px;
+$breakpoint-tablet: 1024px;
+$breakpoint-small-desktop: 1250px;
+$breakpoint-desktop: 1020px;

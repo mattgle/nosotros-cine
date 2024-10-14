@@ -1,37 +1,42 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import ShowcaseCard from "@/components/ShowcaseCard/ShowcaseCard";
 import styles from "./ShowcaseList.module.scss";
-import data from "@/data/showcase.json";
-
-interface ShowcaseItem {
-  img: string;
-  title: string;
-  type: string;
-  filter: string;
-}
+import posts from "@/data/posts.json";
+import cn from "classnames";
 
 const ShowcaseList = () => {
-  const [filter, setFilter] = useState<string>("Ver Todo");
+  const [category, setCategory] = useState<string>("Ver Todo");
 
-  const handleFilterChange = (newFilter: string) => () => {
-    setFilter(newFilter);
-  };
+  const uniqueCategories = useMemo(() => {
+    return [
+      "Ver Todo",
+      ...posts.reduce<string[]>((acc, item) => {
+        if (!acc.includes(item.category)) {
+          acc.push(item.category);
+        }
+        return acc;
+      }, []),
+    ];
+  }, [posts]);
 
-  const uniqueFilters: string[] = [
-    "Ver Todo",
-    ...new Set(data.map((item) => item.filter)),
-  ];
-  const filteredData: ShowcaseItem[] =
-    filter === "Ver Todo"
-      ? data
-      : data.filter((item) => item.filter === filter);
+  const filteredData = useMemo(() => {
+    return category === "Ver Todo"
+      ? posts
+      : posts.filter((item) => item.category === category);
+  }, [category, posts]);
 
   return (
     <div className={styles.showcaseContainer}>
       <div className={styles.filterContainer}>
-        {uniqueFilters.map((filterItem, index) => (
-          <button key={index} onClick={handleFilterChange(filterItem)}>
-            {filterItem}
+        {uniqueCategories.map((categoryItem) => (
+          <button
+            key={categoryItem}
+            onClick={() => setCategory(categoryItem)}
+            className={cn(styles.filter, {
+              [styles.activeFilter]: categoryItem == category,
+            })}
+          >
+            {categoryItem}
           </button>
         ))}
       </div>
@@ -42,7 +47,7 @@ const ShowcaseList = () => {
             img={item.img}
             title={item.title}
             type={item.type}
-            filter={item.filter}
+            filter={item.category}
           />
         ))}
       </div>
