@@ -1,4 +1,4 @@
-import styles from "./ShowcaseCard.module.scss";
+import styles from "./PostsCard.module.scss";
 import megaphoneIcon from "@/assets/megaphone.png";
 import dotsIcon from "@/assets/dots.png";
 import starIcon from "@/assets/star.png";
@@ -53,29 +53,25 @@ const getTextColorStyle = (type: string): string => {
   }
 };
 
-const ShowcaseCard = ({ img, title, type, filter }: Props) => {
+const PostsCard = ({ img, title, type, filter }: Props) => {
   return (
     <div className={styles.container}>
       <img
         src={img}
         alt={title}
-        className={`${styles.showcaseImage} ${getBorderStyle(type)}`}
+        className={`${styles.postsImage} ${getBorderStyle(type)}`}
       />
-      <div className={styles.showcaseTitleContainer}>
-        <p className={styles.showcaseTitle}>{title}</p>
+      <div className={styles.postsTitleContainer}>
+        <p className={styles.postsTitle}>{title}</p>
       </div>
-      <div className={styles.showcaseTypeContainer}>
-        <span className={`${styles.showcaseType} ${getTextColorStyle(type)}`}>
+      <div className={styles.postsTypeContainer}>
+        <span className={`${styles.postsType} ${getTextColorStyle(type)}`}>
           {type.toUpperCase()}
         </span>
-        <img
-          src={getIcon(filter)}
-          alt={filter}
-          className={styles.showcaseIcon}
-        />
+        <img src={getIcon(filter)} alt={filter} className={styles.postsIcon} />
       </div>
     </div>
   );
 };
 
-export default ShowcaseCard;
+export default PostsCard;

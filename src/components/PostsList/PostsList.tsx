@@ -1,10 +1,10 @@
 import { useState, useMemo } from "react";
-import ShowcaseCard from "@/components/ShowcaseCard/ShowcaseCard";
-import styles from "./ShowcaseList.module.scss";
+import PostsCard from "@/components/PostsCard/PostsCard";
+import styles from "./PostsList.module.scss";
 import posts from "@/data/posts.json";
 import cn from "classnames";
 
-const ShowcaseList = () => {
+const PostsList = () => {
   const [category, setCategory] = useState<string>("Ver Todo");
 
   const uniqueCategories = useMemo(() => {
@@ -26,7 +26,7 @@ const ShowcaseList = () => {
   }, [category, posts]);
 
   return (
-    <div className={styles.showcaseContainer}>
+    <div className={styles.postsContainer}>
       <div className={styles.filterContainer}>
         {uniqueCategories.map((categoryItem) => (
           <button
@@ -42,7 +42,7 @@ const ShowcaseList = () => {
       </div>
       <div className={styles.listContainer}>
         {filteredData.map((item, index) => (
-          <ShowcaseCard
+          <PostsCard
             key={index}
             img={item.img}
             title={item.title}
@@ -55,4 +55,4 @@ const ShowcaseList = () => {
   );
 };
 
-export default ShowcaseList;
+export default PostsList;
