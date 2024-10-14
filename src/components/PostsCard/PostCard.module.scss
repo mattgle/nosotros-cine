@@ -10,21 +10,21 @@
   cursor: pointer;
 }
 
-.postsImage {
+.postImage {
   width: 100%;
   height: 250px;
   border-radius: 6px;
   object-fit: cover;
 }
 
-.postsTitleContainer {
+.postTitleContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.postsTitle {
+.postTitle {
   font-family: $roboto;
   font-weight: $medium;
   color: $white;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-.postsTypeContainer {
+.postTypeContainer {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -47,12 +47,12 @@
   min-width: 34px;
 }
 
-.postsIcon {
+.postIcon {
   width: 24px;
   height: 24px;
 }
 
-.postsType {
+.postType {
   font-family: $roboto;
   font-weight: $medium;
   font-size: 12px;
@@ -63,7 +63,7 @@
     transform 0.5s ease;
 }
 
-.container:hover .postsType {
+.container:hover .postType {
   opacity: 1;
   transform: translateX(0);
 }

@@ -1,15 +1,16 @@
 import { useState, useMemo } from "react";
-import PostsCard from "@/components/PostsCard/PostsCard";
 import styles from "./PostsList.module.scss";
-import posts from "@/data/posts.json";
 import cn from "classnames";
+import PostCard from "../PostsCard/PostCard";
+import posts from "@/data/posts.json";
+import { Categories } from "@/types/enums/Categories";
 
-const PostsList = () => {
-  const [category, setCategory] = useState<string>("Ver Todo");
+const PostList = () => {
+  const [category, setCategory] = useState<Categories>(Categories.VerTodo);
 
   const uniqueCategories = useMemo(() => {
     return [
-      "Ver Todo",
+      Categories.VerTodo,
       ...posts.reduce<string[]>((acc, item) => {
         if (!acc.includes(item.category)) {
           acc.push(item.category);
@@ -20,7 +21,7 @@ const PostsList = () => {
   }, [posts]);
 
   const filteredData = useMemo(() => {
-    return category === "Ver Todo"
+    return category === Categories.VerTodo
       ? posts
       : posts.filter((item) => item.category === category);
   }, [category, posts]);
@@ -31,7 +32,7 @@ const PostsList = () => {
         {uniqueCategories.map((categoryItem) => (
           <button
             key={categoryItem}
-            onClick={() => setCategory(categoryItem)}
+            onClick={() => setCategory(categoryItem as Categories)}
             className={cn(styles.filter, {
               [styles.activeFilter]: categoryItem == category,
             })}
@@ -41,13 +42,13 @@ const PostsList = () => {
         ))}
       </div>
       <div className={styles.listContainer}>
-        {filteredData.map((item, index) => (
-          <PostsCard
+        {filteredData.map(({ img, title, type, category }, index) => (
+          <PostCard
             key={index}
-            img={item.img}
-            title={item.title}
-            type={item.type}
-            filter={item.category}
+            img={img}
+            title={title}
+            type={type}
+            category={category as Categories}
           />
         ))}
       </div>
@@ -55,4 +56,4 @@ const PostsList = () => {
   );
 };
 
-export default PostsList;
+export default PostList;

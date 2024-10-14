@@ -1,12 +1,12 @@
 import Hero from "@/components/Hero/Hero";
 import styles from "./Home.module.scss";
-import PostsList from "@/components/PostsList/PostsList";
+import PostList from "@/components/PostsList/PostList";
 
 function Home() {
   return (
     <div className={styles.container}>
       <Hero />
-      <PostsList />
+      <PostList />
     </div>
   );
 }
