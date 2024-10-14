@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
   color: #e3e3e3;
   height: $navbarHeight;
   width: 100%;
@@ -19,8 +18,8 @@
 
 .aboutUsTitle {
   cursor: pointer;
-  font-family: $poppins;
-  font-weight: $semiBold;
+  font-family: $roboto;
+  font-weight: $medium;
   font-size: 20px;
   color: $white;
   border: 2px solid $orange;

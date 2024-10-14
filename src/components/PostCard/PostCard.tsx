@@ -1,13 +1,15 @@
-import styles from "./ShowcaseCard.module.scss";
+import styles from "./PostCard.module.scss";
 import megaphoneIcon from "@/assets/megaphone.png";
 import dotsIcon from "@/assets/dots.png";
 import starIcon from "@/assets/star.png";
+import cn from "classnames";
+import { Categories } from "@/types/enums/Categories";
 
 interface Props {
   img: string;
   title: string;
   type: string;
-  filter: string;
+  category: Categories;
 }
 
 const getBorderStyle = (type: string): string => {
@@ -25,13 +27,13 @@ const getBorderStyle = (type: string): string => {
   }
 };
 
-const getIcon = (filter: string): string => {
-  switch (filter) {
-    case "Noticias":
+const getIcon = (category: Categories): string => {
+  switch (category) {
+    case Categories.Noticias:
       return megaphoneIcon;
-    case "Reseñas":
+    case Categories.Reseñas:
       return dotsIcon;
-    case "Eventos":
+    case Categories.Eventos:
       return starIcon;
     default:
       return "";
@@ -53,29 +55,29 @@ const getTextColorStyle = (type: string): string => {
   }
 };
 
-const ShowcaseCard = ({ img, title, type, filter }: Props) => {
+const PostCard = ({ img, title, type, category }: Props) => {
   return (
     <div className={styles.container}>
       <img
         src={img}
         alt={title}
-        className={`${styles.showcaseImage} ${getBorderStyle(type)}`}
+        className={cn(styles.postImage, getBorderStyle(type))}
       />
-      <div className={styles.showcaseTitleContainer}>
-        <p className={styles.showcaseTitle}>{title}</p>
+      <div className={styles.postTitleContainer}>
+        <p className={styles.postTitle}>{title}</p>
       </div>
-      <div className={styles.showcaseTypeContainer}>
-        <span className={`${styles.showcaseType} ${getTextColorStyle(type)}`}>
+      <div className={styles.postTypeContainer}>
+        <span className={cn(styles.postType, getTextColorStyle(type))}>
           {type.toUpperCase()}
         </span>
         <img
-          src={getIcon(filter)}
-          alt={filter}
-          className={styles.showcaseIcon}
+          src={getIcon(category)}
+          alt={category}
+          className={styles.postIcon}
         />
       </div>
     </div>
   );
 };
 
-export default ShowcaseCard;
+export default PostCard;
