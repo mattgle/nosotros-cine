@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero/Hero";
 import styles from "./Home.module.scss";
-import PostList from "@/components/PostsList/PostList";
+import PostList from "@/components/PostList/PostList";
 
 function Home() {
   return (

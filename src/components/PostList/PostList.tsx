@@ -1,9 +1,9 @@
 import { useState, useMemo } from "react";
-import styles from "./PostsList.module.scss";
+import styles from "./PostList.module.scss";
 import cn from "classnames";
-import PostCard from "../PostsCard/PostCard";
 import posts from "@/data/posts.json";
 import { Categories } from "@/types/enums/Categories";
+import PostCard from "../PostCard/PostCard";
 
 const PostList = () => {
   const [category, setCategory] = useState<Categories>(Categories.VerTodo);
