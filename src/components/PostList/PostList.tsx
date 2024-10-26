@@ -2,15 +2,17 @@ import { useState, useMemo } from "react";
 import styles from "./PostList.module.scss";
 import cn from "classnames";
 import posts from "@/data/posts.json";
-import { Categories } from "@/types/enums/Categories";
+import { Category, Post } from "@/types/posts";
 import PostCard from "../PostCard/PostCard";
 
 const PostList = () => {
-  const [category, setCategory] = useState<Categories>(Categories.VerTodo);
+  const [selectedCategory, setSelectedCategory] = useState<Category>(
+    Category.ViewAll
+  );
 
   const uniqueCategories = useMemo(() => {
-    return [
-      Categories.VerTodo,
+    const categories = [
+      Category.ViewAll,
       ...posts.reduce<string[]>((acc, item) => {
         if (!acc.includes(item.category)) {
           acc.push(item.category);
@@ -18,39 +20,52 @@ const PostList = () => {
         return acc;
       }, []),
     ];
+
+    return categories as Category[];
   }, [posts]);
 
-  const filteredData = useMemo(() => {
-    return category === Categories.VerTodo
-      ? posts
-      : posts.filter((item) => item.category === category);
-  }, [category, posts]);
+  const filteredPosts = useMemo(() => {
+    const filtered =
+      selectedCategory === Category.ViewAll
+        ? posts
+        : posts.filter((item) => item.category === selectedCategory);
+
+    return filtered as Post[];
+  }, [selectedCategory, posts]);
+
+  const renderFilters = (category: Category) => {
+    return (
+      <button
+        key={category}
+        onClick={() => setSelectedCategory(category)}
+        className={cn(styles.filter, {
+          [styles.activeFilter]: category === selectedCategory,
+        })}
+      >
+        {category}
+      </button>
+    );
+  };
+
+  const renderPosts = ({ img, title, type, category }: Post, index: number) => {
+    return (
+      <PostCard
+        key={index}
+        img={img}
+        title={title}
+        type={type}
+        category={category}
+      />
+    );
+  };
 
   return (
     <div className={styles.postsContainer}>
       <div className={styles.filterContainer}>
-        {uniqueCategories.map((categoryItem) => (
-          <button
-            key={categoryItem}
-            onClick={() => setCategory(categoryItem as Categories)}
-            className={cn(styles.filter, {
-              [styles.activeFilter]: categoryItem == category,
-            })}
-          >
-            {categoryItem}
-          </button>
-        ))}
+        {uniqueCategories.map(renderFilters)}
       </div>
       <div className={styles.listContainer}>
-        {filteredData.map(({ img, title, type, category }, index) => (
-          <PostCard
-            key={index}
-            img={img}
-            title={title}
-            type={type}
-            category={category as Categories}
-          />
-        ))}
+        {filteredPosts.map(renderPosts)}
       </div>
     </div>
   );

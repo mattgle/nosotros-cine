@@ -14,7 +14,23 @@ $grayCard: #384649;
 $blackType: #0b171d;
 $blackFilter: #030a0d;
 
+// [------------------------------ FILTER COLORS ------------------------------]
+// Tool from: https://angel-rs.github.io/css-color-filter-generator/
+
+$greenFilter: brightness(0) saturate(100%) invert(58%) sepia(89%) saturate(462%)
+  hue-rotate(54deg) brightness(96%) contrast(92%);
+$lightBlueFilter: brightness(0) saturate(100%) invert(41%) sepia(70%)
+  saturate(2795%) hue-rotate(173deg) brightness(99%) contrast(104%);
+$pinkFilter: brightness(0) saturate(100%) invert(36%) sepia(77%) saturate(1967%)
+  hue-rotate(316deg) brightness(101%) contrast(101%);
+$yellowFilter: brightness(0) saturate(100%) invert(93%) sepia(64%)
+  saturate(3709%) hue-rotate(2deg) brightness(104%) contrast(102%);
+
 // [------------------------------ ALPHA COLORS ------------------------------]
 @function black($decimalOpacity: 1) {
   @return rgba(0, 0, 0, $decimalOpacity);
+}
+
+@function orange($decimalOpacity: 1) {
+  @return rgba(255, 95, 0, $decimalOpacity);
 }
