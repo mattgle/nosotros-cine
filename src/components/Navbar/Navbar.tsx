@@ -10,9 +10,9 @@ function Navbar() {
         <img src={logoIcon} alt="icon" className={styles.icon} />
         <img src={logo} alt="logo" className={styles.icon} />
       </div>
-      <div>
+      {/* <div>
         <span className={styles.aboutUsTitle}>Contacto</span>
-      </div>
+      </div> */}
     </header>
   );
 }
