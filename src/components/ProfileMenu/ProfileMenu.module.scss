@@ -1,0 +1,58 @@
+@import "@/scss/styleguide.scss";
+
+.menuWrapper {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background-color: #081a20;
+  border: 2px solid $orange;
+  border-radius: 16px;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.menu {
+  ul {
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+
+    li {
+      font-family: $poppins;
+      font-size: 16px;
+      color: #e3e3e3;
+      padding: 12px 24px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $orange;
+      }
+
+      &.logout {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-top: 1px solid rgba($orange, 0.3);
+        margin-top: 8px;
+        padding-top: 16px;
+        color: $orange;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

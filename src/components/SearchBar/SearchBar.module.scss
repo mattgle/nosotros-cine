@@ -1,0 +1,28 @@
+@import "@/scss/styleguide.scss";
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px 40px 8px 16px;
+  background: transparent;
+  border: 2px solid $orange;
+  border-radius: 25px;
+  color: #e3e3e3;
+  font-family: $poppins;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+  opacity: 0.8;
+}
