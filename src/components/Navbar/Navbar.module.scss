@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #e3e3e3;
+  color: $lightWhite;
   height: $navbarHeight;
   width: 100%;
   z-index: $z-index-navbar;
@@ -37,7 +37,7 @@
   background-color: transparent;
   border: 2px solid $orange;
   border-radius: 25px;
-  color: #e3e3e3;
+  color: $lightWhite;
   padding: 8px 24px;
   cursor: pointer;
   transition: all 0.3s ease;

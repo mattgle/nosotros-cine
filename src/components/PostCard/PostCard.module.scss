@@ -22,7 +22,7 @@
 .postTitle {
   font-family: $roboto;
   font-weight: $medium;
-  color: $white;
+  color: $whiteCustom;
   font-size: 18px;
   padding: 13px 21px;
   text-align: center;
@@ -100,5 +100,5 @@
 }
 
 .defaultText {
-  color: $black;
+  color: $blackCustom;
 }
