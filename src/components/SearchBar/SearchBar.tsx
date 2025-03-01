@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./SearchBar.module.scss";
-import lupa from "@/assets/svg/lupa.svg";
+import searchIcon from "@/assets/svg/searchIcon.svg";
 
 const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -17,7 +17,7 @@ const SearchBar = () => {
         onChange={handleSearch}
         className={styles.searchInput}
       />
-      <img src={lupa} alt="lupa" className={styles.searchIcon} />
+      <img src={searchIcon} alt="searchIcon" className={styles.searchIcon} />
     </div>
   );
 };
