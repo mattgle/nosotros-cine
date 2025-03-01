@@ -4,12 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #e3e3e3;
+  color: $lightWhite;
   height: $navbarHeight;
   width: 100%;
   z-index: $z-index-navbar;
   border-bottom: 2px solid transparent;
-  padding: 0 10%;
+  padding: 0 5%;
+  gap: 32px;
 }
 
 .icon {
@@ -17,13 +18,41 @@
   height: 50px;
 }
 
-.aboutUsTitle {
-  cursor: pointer;
-  font-family: $roboto;
-  font-weight: $medium;
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.contactButton {
+  font-family: $poppins;
+  font-weight: $semiBold;
   font-size: 20px;
-  color: $white;
+  background-color: transparent;
   border: 2px solid $orange;
-  border-radius: 50px;
-  padding: 8px 16px;
+  border-radius: 25px;
+  color: $lightWhite;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba($orange, 0.1);
+  }
+}
+
+.profileContainer {
+  position: relative;
+}
+
+.profileIcon {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
 }
