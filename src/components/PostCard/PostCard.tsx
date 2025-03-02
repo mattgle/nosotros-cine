@@ -8,15 +8,27 @@ import {
   getTextColorStyle,
 } from "./utils";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Routes } from "@/constants/routes";
 
-const PostCard = ({ img, title, type, category }: Post) => {
+interface PostCardProps extends Post {
+  id: string;
+}
+
+const PostCard = ({ img, title, type, category, id }: PostCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(Routes.Article.replace(":id", id));
+  };
 
   return (
     <div
       className={styles.container}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleClick}
     >
       <img
         src={img}

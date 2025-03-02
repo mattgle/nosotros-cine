@@ -1,0 +1,58 @@
+@import "@/scss/styleguide";
+
+.authorContainer {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  background-color: rgba(8, 26, 32, 0.7);
+  border-radius: 50px;
+  border: 3px solid $orange;
+  max-width: fit-content;
+  position: relative;
+}
+
+.avatarContainer {
+  position: relative;
+  margin-right: 15px;
+  width: 64px;
+  height: 64px;
+  transform: translateX(-1px);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid $orange;
+  position: absolute;
+  left: 0;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: $medium;
+  margin-bottom: 5px;
+  color: $whiteCustom;
+
+  .name {
+    color: $orange;
+    font-weight: $bold;
+  }
+}
+
+.metadata {
+  font-size: 14px;
+  color: $lightWhite;
+
+  .category {
+    color: $green;
+    font-weight: $semiBold;
+  }
+}

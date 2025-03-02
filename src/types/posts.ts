@@ -13,6 +13,7 @@ export enum PostType {
 }
 
 export interface Post {
+  id: string;
   img: string;
   title: string;
   type: PostType;

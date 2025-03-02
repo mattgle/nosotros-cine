@@ -47,7 +47,10 @@ const PostList = () => {
     );
   };
 
-  const renderPosts = ({ img, title, type, category }: Post, index: number) => {
+  const renderPosts = (
+    { img, title, type, category, id }: Post,
+    index: number
+  ) => {
     return (
       <PostCard
         key={index}
@@ -55,6 +58,7 @@ const PostList = () => {
         title={title}
         type={type}
         category={category}
+        id={id}
       />
     );
   };

@@ -1,107 +1,125 @@
 [
   {
+    "id": "cannes-2023",
     "img": "https://picsum.photos/900/301",
     "title": "Programación oficial del Festival de Cine de Cannes 2023",
     "type": "Serie",
     "category": "Noticias"
   },
   {
+    "id": "gran-turismo",
     "img": "https://picsum.photos/900/302",
     "title": "Gran Turismo",
     "type": "Película",
     "category": "Eventos"
   },
   {
+    "id": "mandalorian-premiere",
     "img": "https://picsum.photos/900/303",
-    "title": "La premiere de “Mandalorian” y todo lo que tenes que saber de la serie",
+    "title": "La premiere de 'Mandalorian' y todo lo que tenes que saber de la serie",
     "type": "Película",
     "category": "Eventos"
   },
   {
+    "id": "zodiaco-documental",
     "img": "https://picsum.photos/900/304",
     "title": "El documental del asesino del Zodíaco por David Fincher",
     "type": "Documental",
     "category": "Eventos"
   },
   {
+    "id": "ataque-titanes",
     "img": "https://picsum.photos/900/305",
-    "title": "Premiación anime “Ataque de titanes”",
+    "title": "Premiación anime 'Ataque de titanes'",
     "type": "Premio",
     "category": "Noticias"
   },
   {
+    "id": "bafta-2023",
     "img": "https://picsum.photos/900/306",
     "title": "Los premios Bafta llegan este 19 de febrero de 2023",
     "type": "Premio",
     "category": "Noticias"
   },
   {
+    "id": "erin-carter",
     "img": "https://picsum.photos/900/307",
     "title": "¿Quién es Erin Carter?",
     "type": "Serie",
     "category": "Eventos"
   },
   {
+    "id": "chica-afortunada",
     "img": "https://picsum.photos/900/308",
-    "title": "“La chica más afortunada del mundo” la vida de una escritora neoyorquina",
+    "title": "'La chica más afortunada del mundo' la vida de una escritora neoyorquina",
     "type": "Documental",
     "category": "Noticias"
   },
   {
+    "id": "oscar-2023",
     "img": "https://picsum.photos/900/309",
     "title": "Edición número 95 de los Oscar 2023",
     "type": "Premio",
     "category": "Eventos"
   },
   {
+    "id": "ninja-turtles",
     "img": "https://picsum.photos/900/310",
     "title": "Ninja Turtles: Caos mutante",
     "type": "Película",
     "category": "Noticias"
   },
   {
+    "id": "emmys-2023",
     "img": "https://picsum.photos/900/311",
     "title": "Emmys 2023: Los nominados",
     "type": "Premio",
     "category": "Eventos"
   },
   {
+    "id": "the-bear-s2",
     "img": "https://picsum.photos/900/312",
-    "title": "Llego la segunda temporada de “The Bear”",
+    "title": "Llego la segunda temporada de 'The Bear'",
     "type": "Serie",
     "category": "Noticias"
   },
   {
+    "id": "the-idol",
     "img": "https://picsum.photos/900/313",
-    "title": "“The Idol”: detrás de escena",
+    "title": "'The Idol': detrás de escena",
     "type": "Documental",
     "category": "Reseñas"
   },
   {
+    "id": "futurama-s11",
     "img": "https://picsum.photos/900/314",
-    "title": "“Futurama” temporada 11",
+    "title": "'Futurama' temporada 11",
     "type": "Película",
     "category": "Reseñas"
   },
   {
+    "id": "special-ops-lioness",
     "img": "https://picsum.photos/900/315",
     "title": "Special Ops: Lioness",
     "type": "Serie",
     "category": "Reseñas"
   },
   {
+    "id": "mandalorian-info",
     "img": "https://picsum.photos/900/316",
-    "title": "La premiere de “Mandalorian” y todo lo que tenes que saber de la serie",
+    "title": "La premiere de 'Mandalorian' y todo lo que tenes que saber de la serie",
     "type": "Serie",
     "category": "Eventos"
   },
   {
+    "id": "barbie-behind",
     "img": "https://picsum.photos/900/317",
     "title": "Barbie: detrás de escena",
     "type": "Documental",
     "category": "Noticias"
   },
   {
+    "id": "equalizer-3",
     "img": "https://picsum.photos/900/318",
     "title": "The Equalizer 3: detrás de escena",
     "type": "Documental",

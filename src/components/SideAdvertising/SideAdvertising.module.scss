@@ -1,0 +1,12 @@
+@import "@/scss/styleguide";
+
+.adContainer {
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.adImage {
+  width: 100%;
+  object-fit: contain;
+}
