@@ -1,0 +1,52 @@
+[
+  {
+    "id": "dune-part-two",
+    "title": "La alfombra roja del estreno mundial de 'Dune: Part Two': Timothée Chalamet, Zendaya, Anya Taylor-Joy, Florence Pugh y Austin Butler en Londres",
+    "img": "https://picsum.photos/900/500",
+    "publishDate": "23 marzo, 2023",
+    "category": "Películas",
+    "type": "Película",
+    "author": {
+      "name": "Valentina Kirzman",
+      "avatar": "https://picsum.photos/100/100"
+    },
+    "content": [
+      "Londres acogió el estreno mundial de Dune: Part Two, la muy esperada secuela de la exitosa película de taquilla de 2021 Dune: Part One, dirigida por Denis Villeneuve.",
+      "A Villeneuve se unieron las estrellas de la película, Timothée Chalamet, Zendaya, Rebecca Ferguson, Florence Pugh, Austin Butler, Léa Seydoux, Stellan Skarsgård, Hans Zimmer y Souheila Yacoub, quienes caminaron por la alfombra en el Odeon de Leicester Square el jueves 1 de febrero.",
+      "Zendaya hizo una sorprendente declaración de moda al aparecer por primera vez en la alfombra roja con una pieza de la colección de alta costura Mugler Maschinenmensch (máquina-humana) Otoño/Invierno 1995 antes de optar por un vestido Mugler vintage negro más cómodo.",
+      "Anya Taylor-Joy hizo una aparición sorpresa en la alfombra confirmando su papel en la película protagonizada junto a otros miembros del reparto por Dave Bautista, Christopher Walken, Charlotte Rampling y Javier Bardem.",
+      "La esperada secuela de ciencia ficción, que se estrenará el 1 de marzo, presenta a Paul Atreides (Chalamet) uniéndose a Chani (Zendaya) y los Fremen en una guerra de venganza contra los conspiradores que destruyeron a su familia."
+    ],
+    "gallery": [
+      "https://picsum.photos/900/600",
+      "https://picsum.photos/900/601",
+      "https://picsum.photos/900/602"
+    ],
+    "relatedPosts": ["cannes-2023", "gran-turismo", "mandalorian-premiere"]
+  },
+  {
+    "id": "cannes-2023",
+    "title": "Programación oficial del Festival de Cine de Cannes 2023",
+    "img": "https://picsum.photos/900/301",
+    "publishDate": "21 abril, 2023",
+    "category": "Noticias",
+    "type": "Serie",
+    "author": {
+      "name": "Lucas Rodríguez",
+      "avatar": "https://picsum.photos/100/101"
+    },
+    "content": [
+      "El Festival de Cine de Cannes 2023 anunció su programación oficial, destacando una selección de películas de renombrados directores y nuevos talentos del cine mundial.",
+      "La selección oficial incluye lo nuevo de Martin Scorsese, Wes Anderson y nuevas voces del cine internacional que prometen sorprender en esta edición del prestigioso festival.",
+      "Entre las películas más esperadas se encuentra 'Killers of the Flower Moon' de Martin Scorsese, protagonizada por Leonardo DiCaprio y Robert De Niro, y 'Asteroid City' de Wes Anderson, con un reparto estelar.",
+      "El festival, que se celebrará del 16 al 27 de mayo, también contará con una sección dedicada al cine latinoamericano, con representantes de Argentina, México y Brasil.",
+      "La ceremonia de apertura estará a cargo de la actriz francesa Juliette Binoche, y el jurado será presidido por el director sueco Ruben Östlund, ganador de dos Palmas de Oro."
+    ],
+    "gallery": [
+      "https://picsum.photos/900/603",
+      "https://picsum.photos/900/604",
+      "https://picsum.photos/900/605"
+    ],
+    "relatedPosts": ["oscar-2023", "emmys-2023", "bafta-2023"]
+  }
+]
