@@ -5,7 +5,11 @@ import SideAdvertising from "@/components/SideAdvertising/SideAdvertising";
 import articles from "@/data/articles.json";
 import { Article as ArticleType } from "@/types/articles";
 import AuthorInfo from "@/components/AuthorInfo/AuthorInfo";
-
+import shareIcon from "@/assets/svg/share-icon.svg";
+import instagramIcon from "@/assets/svg/instagram-icon.svg";
+import twitterIcon from "@/assets/svg/twitter-icon.svg";
+import facebookIcon from "@/assets/svg/facebook-icon.svg";
+import gmailIcon from "@/assets/svg/gmail-icon.svg";
 const Article = () => {
   const { id } = useParams<{ id: string }>();
   const [article, setArticle] = useState<ArticleType | null>(null);
@@ -68,6 +72,39 @@ const Article = () => {
               ))}
             </div>
           )}
+
+          <div className={styles.socialLinks}>
+            <a href="#" className={styles.socialIcon} aria-label="Compartir">
+              <img src={shareIcon} alt="Compartir" />
+            </a>
+            <a
+              href="https://instagram.com"
+              className={styles.socialIcon}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
+            <a
+              href="https://x.com"
+              className={styles.socialIcon}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <img src={twitterIcon} alt="Twitter" />
+            </a>
+            <a
+              href="https://facebook.com"
+              className={styles.socialIcon}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <img src={facebookIcon} alt="Facebook" />
+            </a>
+          </div>
         </div>
 
         <div className={styles.rightAdContainer}>
@@ -79,11 +116,31 @@ const Article = () => {
         <h2>Contacto</h2>
         <p>
           Esperamos que puedas visitarnos en nuestras redes donde vas a
-          encontrar <strong>reseñas de películas y series</strong> y todas las
-          noticias actuales sobre nuevos estrenos y sobre tus actores favoritos.
+          encontrar reseñas de películas y series y todas las noticias actuales
+          sobre nuevos estrenos y sobre tus actores favoritos.
         </p>
-        <div className={styles.socialLinks}>
-          {/* Aquí irían los iconos de redes sociales */}
+        <div className={styles.contactIconContainer}>
+          <a
+            href="https://instagram.com"
+            className={styles.contactIcon}
+            target="_blank"
+          >
+            <img src={instagramIcon} alt="Instagram" />
+          </a>
+          <a
+            href="https://x.com"
+            className={styles.contactIcon}
+            target="_blank"
+          >
+            <img src={twitterIcon} alt="Twitter" />
+          </a>
+          <a
+            href="mailto:contacto@example.com"
+            className={styles.contactIcon}
+            target="_blank"
+          >
+            <img src={gmailIcon} alt="Gmail" />
+          </a>
         </div>
       </div>
     </div>
